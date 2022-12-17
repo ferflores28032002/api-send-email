@@ -31,38 +31,141 @@ export const sendEmail = (req, res) => {
             subject: `¡Hola ${name}!`,
             text: "Este es un correo enviado desde nodemailer",
             html: `<!DOCTYPE html>
-            <html lang="es">
-            <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Send Email</title>
-            </head>
-            <body
-                style="margin: 0; padding: 0; box-sizing: border-box; background-color: rgb(137, 137, 240);"
+            <html
+              lang="en"
+              xmlns="http://www.w3.org/1999/xhtml"
+              xmlns:v="urn:schemas-microsoft-com:vml"
+              xmlns:o="urn:schemas-microsoft-com:office:office"
             >
-                <div
-                    style="font-family: monospace; padding: 15px;"
+              <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="x-apple-disable-message-reformatting" />
+                <meta
+                  name="format-detection"
+                  content="telephone=no,address=no,email=no,date=no,url=no"
+                />
+                <meta name="color-scheme" content="light dark" />
+                <meta name="supported-color-schemes" content="light dark" />
+                <title></title>
+              </head>
+            
+              <body
+                width="100%"
+                style="margin: 0; padding: 0 !important; background-color: #efefef"
+              >
+                <center
+                  role="article"
+                  aria-roledescription="email"
+                  lang="en"
+                  style="width: 100%; background-color: #efefef"
                 >
-                    <h4
-                        style="text-align: center; 
-                        color: white;
-                        background-color: rgb(137, 137, 240);"
+                  <div style="max-width: 680px; margin: 0 auto" class="email-container">
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                      style="margin: auto"
                     >
-                       ¡ Bienvenido ${name} !
-                    </h4>
+                      <tr>
+                        <td
+                          style="
+                            text-align: center;
+                            background-image: url('https://cloud1.email2go.io/94f6d7e04a4d452035300f18b984988c/bc9346b3e16f8e1afedf8dd5097524b56567fe53a2b265d497ca462be0ed871c.png');
+                            background-color: #ffffff;
+                            background-position: center center !important;
+                            background-size: cover !important;
+                            height: 350px;
+                          "
+                        >
+                          <div>
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              style="margin: 0; height: 350px; box-sizing: border-box"
+                            >
+                              <tr>
+                                <td></td>
+                                <td
+                                  style="
+                                    text-align: center;
+                                    padding: 80px 0 0 0;
+                                    vertical-align: top;
+                                    height: 350px;
+                                    width: 300px;
+                                    box-sizing: border-box;
+                                  "
+                                >
+                                  <h2>¡Hola ${name}!</h2>
+                                  <p class="black_text">
+                                   Gracias por ser parte de nuestra comunidad.
+                                  </p>
+                                </td>
+                                <td></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
             
-            
-                    <div
-                        style="text-align: center; color: white;"
-                    >
-                        <h4>¡Te has Registrado con exito!</h4>
-            
-                    </div>
-            
-                </div>
-            </body>
-            </html>`
+                      <tr>
+                        <td
+                          style="
+                            text-align: center;
+                            background-image: url('https://cloud1.email2go.io/94f6d7e04a4d452035300f18b984988c/0070b555ad4b4fa5b565d94c7a0df2c10149697c4f370d87a4feefe9df412999.png');
+                            background-color: #ffffff;
+                            background-position: center center !important;
+                            background-size: cover !important;
+                            height: 435px;
+                          "
+                        >
+                          <div>
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              style="margin: 0; height: 435px; box-sizing: border-box"
+                            >
+                              <tr>
+                                <td></td>
+                                <td
+                                  style="
+                                    text-align: center;
+                                    padding: 10px 0 0 0;
+                                    vertical-align: top;
+                                    height: 435px;
+                                    width: 300px;
+                                    box-sizing: border-box;
+                                  "
+                                >
+                                  <h1>¡Te has registrado exitosamente ${name}!</h1>
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                  ></table>
+                                </td>
+                                <td></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </center>
+              </body>
+            </html>
+            `
         }
 
         const Send = transporter.sendMail(message, (error) => {
@@ -78,7 +181,6 @@ export const sendEmail = (req, res) => {
             
         })
         
-
 
     } catch (error) {
         console.log(error)
