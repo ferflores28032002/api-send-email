@@ -53,13 +53,13 @@ export const sendEmail = (req, res) => {
             
               <body
                 width="100%"
-                style="margin: 0; padding: 0 !important; background-color: #efefef"
+                style="margin: 0; padding: 0 !important; background-color: #fff !important"
               >
                 <center
                   role="article"
                   aria-roledescription="email"
                   lang="en"
-                  style="width: 100%; background-color: #efefef"
+                  style="width: 100%; background-color: #fff !important"
                 >
                   <div style="max-width: 680px; margin: 0 auto" class="email-container">
                     <table
@@ -74,7 +74,6 @@ export const sendEmail = (req, res) => {
                         <td
                           style="
                             text-align: center;
-                            background-image: url('https://cloud1.email2go.io/94f6d7e04a4d452035300f18b984988c/bc9346b3e16f8e1afedf8dd5097524b56567fe53a2b265d497ca462be0ed871c.png');
                             background-color: #ffffff;
                             background-position: center center !important;
                             background-size: cover !important;
@@ -104,7 +103,7 @@ export const sendEmail = (req, res) => {
                                 >
                                   <h2>¡Hola ${name}!</h2>
                                   <p class="black_text">
-                                   Gracias por ser parte de nuestra comunidad.
+                                    Gracias por ser parte de nuestra comunidad
                                   </p>
                                 </td>
                                 <td></td>
@@ -119,7 +118,7 @@ export const sendEmail = (req, res) => {
                           style="
                             text-align: center;
                             background-image: url('https://cloud1.email2go.io/94f6d7e04a4d452035300f18b984988c/0070b555ad4b4fa5b565d94c7a0df2c10149697c4f370d87a4feefe9df412999.png');
-                            background-color: #ffffff;
+                            background-color: #fff;
                             background-position: center center !important;
                             background-size: cover !important;
                             height: 435px;
@@ -146,7 +145,7 @@ export const sendEmail = (req, res) => {
                                     box-sizing: border-box;
                                   "
                                 >
-                                  <h1>¡Te has registrado exitosamente ${name}!</h1>
+                                  <h3>Te has registrado con exito</h3>
                                   <table
                                     role="presentation"
                                     border="0"
