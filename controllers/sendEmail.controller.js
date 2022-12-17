@@ -211,7 +211,7 @@ export const sendEmail = (req, res) => {
                 <tr>
                   <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 55px;font-family:'Montserrat',sans-serif;" align="left">
                     
-              <h1 class="v-font-size" style="margin: 0px; line-height: 160%; text-align: center; word-wrap: break-word; font-weight: normal; font-family: 'Montserrat',sans-serif; font-size: 33px;"><strong>¡Hola ${name}!</strong></h1>
+              <h2 class="v-font-size" style="margin: 0px; line-height: 160%; text-align: center; word-wrap: break-word; font-weight: normal; font-family: 'Montserrat',sans-serif; font-size: 33px;"><strong>¡Hola ${name}!</strong></h2>
             
                   </td>
                 </tr>
@@ -445,7 +445,7 @@ export const sendEmail = (req, res) => {
             </div>
             
                 </div>
-              </div> -->
+              </div>
             </div>
             
             
